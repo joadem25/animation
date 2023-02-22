@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+#environment {
+    width: 100%;
+    min-height: 20rem;
+    background-image: url('./images/ilustrasion-scene.png');
+    background-repeat: no-repeat;
+    background-color: skyblue;
+    position: fixed;
+    
+}
+
+#road {
+    width: 100%;
+    height: 3.1rem;
+    background-color: rgb(48, 48, 48);
+    bottom: 0;
+    position: absolute;
+}
+
+#truck_1 {
+    width: 15%;
+    height: 250%;
+    background-image: url('./images/dtruck_1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+    /* background-color: red; */
+    animation-name: moveForward;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    /* animation-delay: 3s; */
+}
+
+@keyframes moveForward {
+    0% {
+        transform: translateX(20rem);
+    }
+
+    100% {
+        transform: translateX(-90rem);
+    }
+}
+
+#truck_2 {
+    width: 15%;
+    height: 250%;
+    background-image: url('./images/dtruck_3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+    /* background-color: red; */
+    animation-name: moveForward;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    /* animation-delay: 3s; */
+}
+
+#taxi_1 {
+    width: 15%;
+    height: 250%;
+    background-image: url('./images/taxi_3.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -28px;
+    right: -85px;
+    background-size: contain;
+    /* background-color: red; */
+    animation-name: moveForward;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-delay: 3s;
+}
+
+#bike_1 {
+    width: 15%;
+    height: 170%;
+    background-image: url('./images/bike_1.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    background-size: contain;
+    /* background-color: red; */
+    animation-name: moveForward;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    /* animation-delay: 3s; */
+}
+
+
+
